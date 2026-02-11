@@ -1,5 +1,7 @@
+# Use official n8n image
 FROM n8nio/n8n:latest
 
+# Environment variables for Postgres + SSL + n8n auth
 ENV DB_TYPE=postgresdb \
     DB_POSTGRESDB_HOST=dpg-d61fiq7fte5s738ghpig-a.oregon-postgres.render.com \
     DB_POSTGRESDB_PORT=5432 \
